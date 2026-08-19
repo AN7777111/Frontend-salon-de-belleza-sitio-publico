@@ -2,27 +2,32 @@
   overflow: hidden;
 }
 
+/* --- HERO A TODO ANCHO CON IMAGEN DE FONDO --- */
 .hero {
   min-height: 720px;
   padding: 150px 8% 90px;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* Pasamos de grid a flex centrado a la izquierda */
+  display: flex;
   align-items: center;
-  gap: 60px;
 
-  background:
-    radial-gradient(circle at 80% 35%, #fce4eb 0, transparent 30%),
-    linear-gradient(135deg, #fffafa, #fdf2f5);
+  /* Imagen a pantalla completa con capa oscura (overlay) */
+  background-image: 
+    linear-gradient(rgba(20, 10, 15, 0.55), rgba(20, 10, 15, 0.55)), 
+    url('../assets/images/ajsghdasd.jpeg'); /* Reemplaza con tu ruta de imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
   max-width: 600px;
+  position: relative;
+  z-index: 2;
 }
 
-.hero-label,
-.section-label {
-  color: #c68597;
+.hero-label {
+  color: #f3c2ce; /* Rosa claro brillante para destacar */
   font-size: 12px;
   letter-spacing: 3px;
   font-weight: 600;
@@ -33,18 +38,18 @@
   font-family: "Playfair Display", serif;
   font-size: clamp(55px, 7vw, 90px);
   line-height: 0.98;
-  color: #563d46;
+  color: #ffffff; /* Blanco para máxima legibilidad */
   margin-bottom: 28px;
 }
 
 .hero h1 span {
-  color: #d79aaa;
+  color: #f7d6c8; /* Tono rosa/dorado suave en cursiva */
   font-style: italic;
 }
 
 .hero-description {
   max-width: 500px;
-  color: #77666d;
+  color: #e2d8dc; /* Blanco/gris suave */
   line-height: 1.8;
   font-size: 15px;
   margin-bottom: 32px;
@@ -64,6 +69,7 @@
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .primary-button {
@@ -76,15 +82,19 @@
 }
 
 .secondary-button {
-  border: 1px solid #dcbac4;
-  color: #765762;
-  background: white;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px); /* Efecto cristalino elegante */
 }
 
+.secondary-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Ocultar/eliminar la antigua regla .hero-decoration del CSS si la tenías */
 .hero-decoration {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 
 .hero-circle {

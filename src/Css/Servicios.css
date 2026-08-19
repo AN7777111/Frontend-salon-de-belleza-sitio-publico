@@ -3,14 +3,20 @@
   background: #fff;
 }
 
+/* --- HEADER CON IMAGEN INTEGRADA --- */
 .page-header {
   padding: 110px 6% 90px;
   text-align: center;
-  background: #fdf2f5;
+  
+  /* Imagen de fondo + Capa oscura (Overlay) para legibilidad */
+  background-image: linear-gradient(rgba(20, 10, 15, 0.55), rgba(20, 10, 15, 0.55)), url('../assets/images/Gemini_Generated_Image_wafsihwafsihwafs.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .page-header p {
-  color: #c68597;
+  color: #f3c2ce; /* Rosa claro brillante para que contraste sobre la imagen */
   font-size: 12px;
   letter-spacing: 3px;
   font-weight: 600;
@@ -20,19 +26,20 @@
 .page-header h1 {
   font-family: "Playfair Display", serif;
   font-size: clamp(45px, 6vw, 70px);
-  color: #5a4049;
+  color: #ffffff; /* Texto blanco para resaltar */
   margin-bottom: 18px;
 }
 
 .page-header h1 em {
-  color: #d79aaa;
+  color: #f7d6c8; /* Tono rosa/dorado suave para destacar la cursiva */
 }
 
 .page-header span {
-  color: #796970;
+  color: #e2d8dc; /* Color suave/claro para la descripción */
   font-size: 15px;
 }
 
+/* --- RESTO DE TU CÓDIGO PERMANECE IGUAL --- */
 .services-page-content {
   width: min(1100px, 90%);
   margin: auto;
