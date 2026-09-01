@@ -5,11 +5,14 @@
 .booking-header {
   text-align: center;
   padding: 105px 20px 75px;
-  background: #fdf2f5;
+  background-image: linear-gradient(rgba(20, 10, 15, 0.55), rgba(20, 10, 15, 0.55)), url('../assets/images/Image\ 6.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .booking-header p {
-  color: #c68597;
+  color: #f3c2ce;
   font-size: 12px;
   letter-spacing: 3px;
   font-weight: 600;
@@ -17,17 +20,17 @@
 
 .booking-header h1 {
   font-family: "Playfair Display", serif;
-  color: #5a4049;
+  color: #ffffff;
   font-size: clamp(45px, 6vw, 70px);
   margin: 18px 0;
 }
 
 .booking-header h1 em {
-  color: #d79aaa;
+  color: #f7d6c8;
 }
 
 .booking-header span {
-  color: #796970;
+  color: #e2d8dc;
   font-size: 15px;
 }
 

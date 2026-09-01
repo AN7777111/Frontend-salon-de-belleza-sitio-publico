@@ -5,11 +5,14 @@
 .about-hero {
   padding: 110px 8%;
   text-align: center;
-  background: #fdf2f5;
+  background-image: linear-gradient(rgba(20, 10, 15, 0.55), rgba(20, 10, 15, 0.55)), url('../assets/images/Image\ 3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .about-hero p {
-  color: #c68597;
+  color: #f3c2ce;
   letter-spacing: 3px;
   font-size: 12px;
   font-weight: 600;
@@ -20,11 +23,11 @@
   font-family: "Playfair Display", serif;
   font-size: clamp(45px, 6vw, 72px);
   line-height: 1.05;
-  color: #5a4049;
+  color: #ffffff;
 }
 
 .about-hero em {
-  color: #d79aaa;
+  color: #f7d6c8;
 }
 
 .about-content {
